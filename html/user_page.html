@@ -1,0 +1,72 @@
+<html>
+<head>
+<link href="/static/960.css" rel="stylesheet">
+<link href="/static/style.css" rel="stylesheet">
+<script type="text/javascript" src="/static/jquery-3.3.1.min.js"></script>
+
+<title>$user_name</title>
+
+</head>
+
+<body>
+<div class="container_12" >
+    <span class="grid_1"><img src="/static/logo.jpg" width="80"/></span>
+    <h1 class="grid_9">
+        &nbsp;  $user_name
+    </h1>
+    <h1 class="grid_2"><a href="/logout">Выйти</a></h1>
+    <hr class="grid_12"/>
+</div>
+
+<div class="container_12">
+ 
+    <div class="grid_4">
+    <table class="newspaper-a">
+    <thead>
+    </thead>
+    <tbody><tr><td>
+    #if $has_photo
+        <img src="/static/user_photos/$photo" width="250">
+    #else
+        <form method="post" action="upload" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="$id"/>
+            <input type="file" name="ufile" />
+            <input type="submit" />
+        </form>
+    #end if 
+    </td></tr></tbody>
+    </table>
+    </div>
+
+    <div class="grid_4">
+    <table class="newspaper-a">
+    <thead>
+    <th>Мои курсы</th>
+    </thead>
+    <tbody>
+    
+    #for $course in $courses
+    <tr><td>
+        <a href="/course?id=$course.id">$course.name</a>
+    </td></tr>
+    #end for
+    
+    </tbody>
+    </table>
+    </div>
+    
+    <div class="grid_4">
+    <table class="newspaper-a">
+    <thead>
+    <th>Мои оценки</th>
+    </thead>
+    <tbody>
+    <tr><td></td></tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+
+
+</body>
+</html>

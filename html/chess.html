@@ -1,0 +1,330 @@
+<html>
+<head>
+	<title>Chess!</title>
+	<style>
+	:root {
+		--white-bg-color: #ffffaa;
+		--black-bg-color: #770000;
+	}
+	.white {
+		background-color: var(--white-bg-color);
+		float: left;
+		width: 40px;
+		height: 40px;
+		border: 2px solid #330000;
+	}
+	.black {
+		background-color: var(--black-bg-color);
+		float: left;
+		width: 40px;
+		height: 40px;
+		border: 2px solid #330000;
+	}
+
+	.wpawn {
+		width: 42px;
+		height: 42px;
+		background: url(static/pieces.png) 0px 40px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: transparent;
+	}
+	.bpawn {
+		width: 40px;
+		height: 40px;
+		background: url(static/pieces.png) 0px -14px;
+	}
+	.wknight {
+		width: 40px;
+		height: 40px;
+		background: url(static/pieces.png) -40px 40px;
+	}
+	.bknight {
+		width: 40px;
+		height: 40px;
+		background: url(static/pieces.png) -40px -14px;
+	}
+	.wbishop {
+		width: 40px;
+		height: 40px;
+		background: url(static/pieces.png) -78px 42px;
+	}
+	.bbishop {
+		width: 40px;
+		height: 40px;
+		background: url(static/pieces.png) -78px -11px;
+	}
+	.wrook {
+		width: 40px;
+		height: 40px;
+		background: url(static/pieces.png) -115px 42px;
+	}
+	.brook {
+		width: 40px;
+		height: 40px;
+		background: url(static/pieces.png) -115px -11px;
+	}
+	.wqueen {
+		width: 40px;
+		height: 40px;
+		background: url(static/pieces.png) -148px 48px;
+	}
+	.bqueen {
+		width: 40px;
+		height: 40px;
+		background: url(static/pieces.png) -148px -5px;
+	}
+	.wking {
+		width: 40px;
+		height: 40px;
+		background: url(static/pieces.png) -178px 50px;
+	}
+	.bking {
+		width: 40px;
+		height: 40px;
+		background: url(static/pieces.png) -178px -5px;
+	}
+	.empty {
+		width: 40px;
+		height: 40px;
+		background-color: var(--white-bg-color);
+	}
+	.button{
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
+		padding: 6px 20px;
+		margin: 0;
+		cursor: pointer;
+		border: 1px solid #bbb;
+		overflow: visible;
+		font: bold 13px arial, helvetica, sans-serif;
+		text-decoration: none;
+		white-space: nowrap;
+		color: rgba(180,180,180,1.0);
+
+		background-color: #269CE9;
+		border-color: #269CE9;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
+		background-image: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+		background-image: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+		background-image: -ms-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+		background-image: -o-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+		background-image: linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+
+		-webkit-transition: background-color .2s ease-out;
+		-moz-transition: background-color .2s ease-out;
+		-ms-transition: background-color .2s ease-out;
+		-o-transition: background-color .2s ease-out;
+		transition: background-color .2s ease-out;
+		background-clip: padding-box; /* Fix bleeding */
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+		-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+		box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+		text-shadow: 0 1px 0 rgba(0,0,0, .9);
+
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	.chosenPiece {
+		border-style: solid;
+		border-width: 1px;
+		border-color: red;
+	}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+	var current_piece = "";
+	var current_mode = 0;
+	var board_pieces = new Array(64);
+
+
+	jQuery(window).load(function() {
+
+
+//Проверяем шла ли игра
+if (localStorage.length != 0) {
+	current_mode = localStorage.getItem('current_mode');
+	arr = ["Play", "Set"];
+	jQuery("#ButtonPlay").html(arr[current_mode]);
+	jQuery(".empty").click();
+	//localStorage.removeItem('current_mode');
+}
+
+
+
+var all_pieces = ".wpawn,.bpawn,.wking,.bking,.wknight,.bknight,"+
+".wbishop,.bbishop,.wrook,.brook,.wqueen,.bqueen";
+
+function setPiece(obj, cl, color) {
+	obj.removeClass();
+	obj.addClass(cl);            
+	obj.addClass(current_piece);
+	obj.css("background-color", color);
+}
+jQuery(all_pieces + ",.empty").click(function() {
+	jQuery(all_pieces + ",.empty").removeClass("chosenPiece");
+	if (jQuery(this).attr("class") == "empty") {
+		current_piece= "";
+	} else {
+		current_piece= jQuery(this).attr("class");
+	}
+	jQuery(this).addClass("chosenPiece");
+});
+
+function drawBoards() {
+	classes = ["white", "black"];
+
+	for (i=0; i < 8; i++) {
+		for (j=0; j < 8; j++) {
+			jQuery("#board1").append("<div class='" + classes[(i + j) % 2] + "' id='" + (i*8+j) + "'></div>");
+			jQuery("#board2").append("<div class='" + classes[(i + j) % 2] + "' id='" + (i*8+j+64) + "'></div>");
+		}
+		jQuery("#board1").append("<div style='clear:both;'></div>");
+		jQuery("#board2").append("<div style='clear:both;'></div>");
+	}
+
+	jQuery(".white,.black").click(function() {
+		id = jQuery(this).attr("id");
+		if (id >= 64) 
+			id = 127 - id;    
+		if (jQuery(this).hasClass("white")) {
+			setPiece(jQuery("#"+id), "white", "var(--white-bg-color)");
+			setPiece(jQuery("#"+(127-id)), "white", "var(--white-bg-color)"); 
+		} else {
+			setPiece(jQuery("#"+id), "black", "var(--black-bg-color)");
+			setPiece(jQuery("#"+(127-id)), "black", "var(--black-bg-color)"); 
+		}
+		if (current_mode == 1) {	
+			if (current_piece == "") {
+				if (board_pieces[id] != "") {
+					jQuery("." + board_pieces[id]).not(".black").not(".white").click();
+					current_piece = board_pieces[id];
+					board_pieces[id] = "";
+				}
+			} else {
+				board_pieces[id] = current_piece;
+				jQuery(".empty").click();
+			}
+			//Записываем положение фигур
+			localStorage.removeItem('chess');
+			localStorage.setItem('chess', JSON.stringify(board_pieces));
+		} else {
+			board_pieces[id] = current_piece;
+		}
+
+	});
+}
+
+drawBoards();
+//Расставляем фигуры
+if (localStorage.getItem('chess') != null) {
+	board_pieces = JSON.parse(localStorage.getItem('chess'));
+	for(i=0;i<64;i++) {
+		current_piece = board_pieces[i];
+		jQuery("#"+i).click();
+	}
+	//localStorage.setItem('current_mode', 1);
+	//localStorage.removeItem('chess');
+	jQuery(".empty").click();
+}
+
+jQuery("#ButtonClearAll").click(function(){
+	jQuery("#board1").empty();
+	jQuery("#board2").empty();
+	drawBoards();      
+});
+
+jQuery("#ButtonSet").click(function(){
+	jQuery("#board1").empty();
+	jQuery("#board2").empty();
+	drawBoards();      
+	current_piece = "wpawn";
+	for(i=48;i<56;i++) {
+		jQuery("#"+i).click();
+	}
+	current_piece = "bpawn";
+	for(i=8;i<16;i++) {
+		jQuery("#"+i).click();
+	}
+	current_piece = "wrook";
+	jQuery("#56,#63").click();
+	current_piece = "brook";
+	jQuery("#120,#127").click();
+	current_piece = "wknight";
+	jQuery("#57,#62").click();
+	current_piece = "bknight";
+	jQuery("#121,#126").click();  
+	current_piece = "wbishop";
+	jQuery("#58,#61").click();  
+	current_piece = "bbishop";
+	jQuery("#122,#125").click();     
+	current_piece = "wqueen";
+	jQuery("#59").click(); 
+	current_piece = "bqueen";
+	jQuery("#124").click();   
+	current_piece = "wking";
+	jQuery("#60").click(); 
+	current_piece = "bking";
+	jQuery("#123").click();   
+	jQuery(".empty").click();
+});
+
+jQuery("#ButtonPlay").click(function(){
+	arr = ["Play", "Set"];
+	current_mode = 1 - current_mode;
+        //Записываем началась ли игра
+        if (current_mode == 1) {
+        	localStorage.setItem('current_mode', 1);
+        } else {
+            alert('clear()');
+        	localStorage.clear();
+        }
+        jQuery("#ButtonPlay").html(arr[current_mode]);
+        jQuery(".empty").click();
+    }); 
+
+});
+</script>
+</head>
+
+<body>
+	<div id="board1" style='float:left;'></div>
+	<div style='float:left; width:40px;'>&nbsp;</div>
+	<div id="board2" style='float:left;'></div>
+	<div style='clear:both;'></div>
+	<br/>
+	<div id="wpieces">
+		<div class="wpawn" style="float:left;"></div>
+		<div class="wking" style="float:left;"></div>
+		<div class="wqueen" style="float:left;"></div>
+		<div class="wrook" style="float:left;"></div>
+		<div class="wbishop" style="float:left;"></div>
+		<div class="wknight" style="float:left;"></div>
+		<div class="empty" style="float:left;"></div>
+	</div>
+	<div style='clear:both;'></div>
+	<div id="bpieces">
+		<div class="bpawn" style="float:left;"></div>
+		<div class="bking" style="float:left;"></div>
+		<div class="bqueen" style="float:left;"></div>
+		<div class="brook" style="float:left;"></div>
+		<div class="bbishop" style="float:left;"></div>
+		<div class="bknight" style="float:left;"></div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="button" id="ButtonClearAll"> Clear! </div>
+	<div class="button" id="ButtonSet"> Initial </div>
+	<div class="button" id="ButtonPlay"> Play </div>
+</body>
+</html>

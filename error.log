@@ -1,0 +1,1940 @@
+[15/Oct/2019:17:03:11] HTTP 
+Request Headers:
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=2449f878afb6ac70081bac9827c0c2c306480003
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[15/Oct/2019:17:03:11] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[15/Oct/2019:17:03:19] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=cb27081b4e71cc2f03157e60555c4bef8b10f126
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[15/Oct/2019:17:03:19] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+TypeError: main() takes no arguments (1 given)
+[15/Oct/2019:17:03:19] HTTP 
+Request Headers:
+  REFERER: http://localhost:10020/main
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=9eb2562c7d67b3580e1465e7e96c8bb4d33f5539
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[15/Oct/2019:17:03:19] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[15/Oct/2019:17:03:39] HTTP 
+Request Headers:
+  REFERER: http://localhost:10020/main
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=d23de40535525e31e742ae7e9ecb192f3ce74614
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[15/Oct/2019:17:03:39] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[15/Oct/2019:17:05:06] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/main
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=b6a3b8f54cf31f5e9135072a977a9216341d28e0
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[15/Oct/2019:17:05:06] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[15/Oct/2019:17:05:08] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/main
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=5a08e9dff56f88a8879f104b237e6b98af5c5c54
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[15/Oct/2019:17:05:08] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[15/Oct/2019:17:06:13] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/main
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=60b23e31832d74f6f830aa9706b3daa0bd312b2c
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[15/Oct/2019:17:06:13] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[15/Oct/2019:17:06:15] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/main
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=e0b9035d08d1f176be0528e78efd2a0a7d800d87
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[15/Oct/2019:17:06:15] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[15/Oct/2019:17:06:17] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/main
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=fa3b6600873817787c393256344ccd92e40ff80d
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[15/Oct/2019:17:06:17] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:11:47] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=96f955608f3f616b97c890a6ca89b66f68ed6d80
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:11:47] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:12:28] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/index.html
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=c4fab1e4baca0a7ddfd98fd750b30231d5e84c61
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:12:28] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:12:33] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/index
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=955f74eaf9f2342da2c8b27844d745447f8b5f8f
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:12:33] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:13:57] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/index
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=597bd222f44d2c7a9f2a02c74ec56043d62b55d9
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:13:57] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:14:03] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=48b401e5b9d3ec45624615768c5620842bb29f2c
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:14:03] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:14:05] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=1bd8f514340b376f1f66b78c039832dfab7d97fb
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:14:05] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:17:28] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=74d2a54860828b899fbb06ff8595a7c191454da1
+  SEC-FETCH-MODE: navigate
+  HOST: 127.0.0.1:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:17:28] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\WebApps2019\main.py", line 9, in index
+    login_page = os.path.join('html', 'chess.html')
+NameError: global name 'os' is not defined
+[22/Oct/2019:16:17:28] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=7fc3441e7d00353fb698c17ca50a7665d087d763
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:17:28] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:18:02] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=4c6ce85d688d162ae8d2da1a5a827bb3fea157e2
+  SEC-FETCH-MODE: navigate
+  HOST: 127.0.0.1:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:18:02] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\WebApps2019\main.py", line 11, in index
+    f = codecs.open(login_page, encoding='utf-8')
+NameError: global name 'codecs' is not defined
+[22/Oct/2019:16:18:02] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=31d0001482cdfb8d6d21ba2643cbc6a788808b62
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:18:02] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:18:18] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=85b5d66ed7b8b1522d645aedc96ee8b0eaf968ad
+  SEC-FETCH-MODE: navigate
+  HOST: 127.0.0.1:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:18:18] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\WebApps2019\main.py", line 15, in index
+    return unicode(rend)
+  File "C:\Python27\lib\site-packages\Cheetah\Template.py", line 1053, in __unicode__
+    return getattr(self, mainMethName)()
+  File "DynamicallyCompiledCheetahTemplate.py", line 236, in respond
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 289, in valueFromSearchList
+    _raiseNotFoundException(key, searchList)
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 174, in _raiseNotFoundException
+    raise NotFound(excString)
+NotFound: cannot find 'window'
+[22/Oct/2019:16:18:18] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=9508210be90478d0e038b4d4c762ea7749d23c68
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:18:18] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:21:08] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=c119f479440d3dedfc65f05db0c966127f681688
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:21:08] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:22:57] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=620fd2abaeb3a1e9c96255be2d088325dcc6da4e
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:22:57] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:23:13] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=ec71a749e3a431f954a26c496d4fb21bf4c5ea1e
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:23:13] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:25:38] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/public/pieces.png
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=de7a9a017373cf3082745081e67f14f21f3150d7
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:25:38] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:26:57] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/static/pieces.png
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=e443bf8e0bd04bba03ed4b91e3281e28a8dc986b
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:26:57] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:27:53] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=4b919a6b3e1f75d0a4cceeabe6173cc5949c15f9
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:27:53] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:29:45] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=528ca52c1b5330c0865d81b91ec164cde9e93a45
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:29:45] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:31:13] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=4afaa5dcdb0cef01c74563be6c3a7506ea93b184
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:31:13] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:31:34] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=46ca58a123cfd5aa01c70c41a81a4ad6712ca56e
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:31:34] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:31:44] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=17ce986382f8049453dac1f282cd1b334ac4207f
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:31:44] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:32:12] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=50d7c8d8d5d4a4ee1cd06aa116c9e70c16349ec7
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:32:12] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:32:19] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=70a4c184b880222fd5007f7f97dac48940375862
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:32:19] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:32:32] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=3224e7744c3f6958093561305d7ff29edd43d88f
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:32:32] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:35:05] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=472217d6543cad413d5a84a1aa218b3eabc3f0eb
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:35:05] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:35:11] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=5a8733edd65c989cb703e2f3fb7049a37f0b42dc
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:35:11] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:35:26] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=ea300c6c185bbf45f05c9aa3ae0ca4521f2d105d
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:35:26] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:35:36] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=6104466d3733d6b213bbf1f2c9925f3133e46a3c
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:35:36] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:35:39] HTTP 
+Request Headers:
+  REFERER: http://127.0.0.1:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+  COOKIE: session_id=6e8e0119b2d5b4a5cac0d976a011a28c3376b7e6
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[22/Oct/2019:16:35:39] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:41:07] HTTP 
+Request Headers:
+  COOKIE: session_id=f295d10734d2d1a6fdc6ba1dbdaf010397c0c9d1
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[22/Oct/2019:16:41:07] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:41:07] HTTP 
+Request Headers:
+  COOKIE: session_id=f295d10734d2d1a6fdc6ba1dbdaf010397c0c9d1
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[22/Oct/2019:16:41:08] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:41:22] HTTP 
+Request Headers:
+  COOKIE: session_id=8d9190150435e70ca106f5c508d796c378fd0337
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[22/Oct/2019:16:41:22] HTTP 
+Request Headers:
+  COOKIE: session_id=8d9190150435e70ca106f5c508d796c378fd0337
+  HOST: 127.0.0.1:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[22/Oct/2019:16:41:22] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[22/Oct/2019:16:41:22] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[29/Oct/2019:08:23:43] HTTP 
+Request Headers:
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+  COOKIE: session_id=7fe0d1a3538cb5bd22e22ad77a47599862cd18cd
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[29/Oct/2019:08:23:43] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[29/Oct/2019:08:29:39] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+  COOKIE: session_id=a06d2ce2842cc3080c07a1678c0d92db58cc8087
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[29/Oct/2019:08:29:39] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[29/Oct/2019:08:32:06] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+  COOKIE: session_id=2a8b44700c0dd2fae306e750ff81436b500243c1
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[29/Oct/2019:08:32:06] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[29/Oct/2019:08:59:26] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+  COOKIE: session_id=51c0acbaac4432260e14a16f802931cc098f04c0
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[29/Oct/2019:08:59:26] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[29/Oct/2019:09:07:12] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+  COOKIE: session_id=b6004c49be0480959f2ff1b0be663f1c59098595
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[29/Oct/2019:09:07:12] HTTP 
+Traceback (most recent call last):
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "c:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[29/Oct/2019:09:08:17] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+  COOKIE: session_id=36301cdd4b9f00d332017484f8c64bfc134927cd
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[29/Oct/2019:09:08:17] HTTP 
+Traceback (most recent call last):
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "c:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[29/Oct/2019:09:10:49] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+  COOKIE: session_id=8971defadd198190454d18f146cf332fbea3597c
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[29/Oct/2019:09:10:49] HTTP 
+Traceback (most recent call last):
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "c:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[29/Oct/2019:09:11:06]  
+Traceback (most recent call last):
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 104, in run
+    hook()
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cptools.py", line 188, in _wrapper
+    if self.callable(**kwargs):
+  File "c:\Python27\lib\site-packages\cherrypy\lib\static.py", line 387, in staticfile
+    raise ValueError(msg)
+ValueError: Static tool requires an absolute filename (got 'bo.ico').
+[29/Oct/2019:09:11:06] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+  COOKIE: session_id=cb6fa2239324d4d4a5c2e8559924abdd7a060526
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[29/Oct/2019:09:11:06] HTTP 
+Traceback (most recent call last):
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    self.hooks.run('before_handler')
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 114, in run
+    raise exc
+ValueError: Static tool requires an absolute filename (got 'bo.ico').
+[29/Oct/2019:09:13:08] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+  COOKIE: session_id=16ecd1b968f247a7ead5d8ce960464609236ffe1
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[29/Oct/2019:09:13:08] HTTP 
+Traceback (most recent call last):
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "c:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[29/Oct/2019:09:13:47] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+  COOKIE: session_id=659ffa85b90b9ded6498520c96b94d6a8836500b
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[29/Oct/2019:09:13:47] HTTP 
+Traceback (most recent call last):
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "c:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[29/Oct/2019:09:14:43] HTTP 
+Request Headers:
+  PRAGMA: no-cache
+  REFERER: http://localhost:10020/
+  SEC-FETCH-MODE: no-cors
+  HOST: localhost:10020
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  Remote-Addr: 127.0.0.1
+  ACCEPT: image/webp,image/apng,image/*,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+  COOKIE: session_id=1508d0e1263b08b17461297142ac8f81c1b3c04c
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: same-origin
+  ACCEPT-ENCODING: gzip, deflate, br
+[29/Oct/2019:09:14:43] HTTP 
+Traceback (most recent call last):
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "c:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "c:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "c:\Python27\lib\site-packages\cherrypy\_cptools.py", line 181, in handle_func
+    handled = self.callable(*args, **self._merged_args(kwargs))
+TypeError: staticfile() got multiple values for keyword argument 'filename'
+[05/Nov/2019:16:41:16] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=234d42bb28c64d0a072236eefc6a3633addb835a
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[05/Nov/2019:16:41:16] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 46, in index
+    return login_page("init")
+NameError: global name 'login_page' is not defined
+[12/Nov/2019:15:46:21] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=f3ea46cd5430b171d95884d032f00abab01dfb7b
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[12/Nov/2019:15:46:21] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 66, in user
+    f = codecs.open(login_page, encoding='utf-8')
+  File "C:\Python27\lib\codecs.py", line 896, in open
+    file = __builtin__.open(filename, mode, buffering)
+TypeError: coercing to Unicode: need string or buffer, function found
+[12/Nov/2019:16:03:58] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=20f36a2e43e152f86c687036765d72bd6fb87579
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[12/Nov/2019:16:03:58] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 69, in user
+    if cherrypy.session['user_id'] != id:
+  File "C:\Python27\lib\site-packages\cherrypy\__init__.py", line 246, in __getitem__
+    return child[key]
+  File "C:\Python27\lib\site-packages\cherrypy\lib\sessions.py", line 322, in __getitem__
+    return self._data[key]
+KeyError: 'user_id'
+[12/Nov/2019:16:20:04] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=a3b5852c259bf540d6afcc4dbeefb81d8ce41afd
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[12/Nov/2019:16:20:04] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 89, in user
+    return unicode(rend)
+  File "C:\Python27\lib\site-packages\Cheetah\Template.py", line 1053, in __unicode__
+    return getattr(self, mainMethName)()
+  File "cheetah_DynamicallyCompiledCheetahTemplate_1573564804_26_13777.py", line 120, in respond
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 289, in valueFromSearchList
+    _raiseNotFoundException(key, searchList)
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 174, in _raiseNotFoundException
+    raise NotFound(excString)
+NotFound: cannot find 'has_photo'
+[12/Nov/2019:16:47:39] HTTP 
+Request Headers:
+  REFERER: http://localhost:10020/user?id=1
+  ORIGIN: http://localhost:10020
+  Remote-Addr: 127.0.0.1
+  Content-Length: 279877
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  CONNECTION: keep-alive
+  COOKIE: session_id=a3b5852c259bf540d6afcc4dbeefb81d8ce41afd
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  SEC-FETCH-SITE: same-origin
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-USER: ?1
+  Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryGsA365dhxQ4G70Yq
+  ACCEPT-ENCODING: gzip, deflate, br
+[12/Nov/2019:16:47:39] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 104, in upload
+    with open(upload_file, 'wb') as out:
+IOError: [Errno 2] No such file or directory: '\\public\\user_photos\\1.jpg'
+[12/Nov/2019:16:57:40] HTTP 
+Request Headers:
+  REFERER: http://localhost:10020/user?id=1
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  CONNECTION: keep-alive
+  COOKIE: session_id=a3b5852c259bf540d6afcc4dbeefb81d8ce41afd
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  SEC-FETCH-SITE: same-origin
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[12/Nov/2019:16:57:40] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 87, in user
+    rend = Template(temp)
+  File "C:\Python27\lib\site-packages\Cheetah\Template.py", line 1336, in __init__
+    self._compile(source, file, compilerSettings=compilerSettings)
+  File "C:\Python27\lib\site-packages\Cheetah\Template.py", line 1637, in _compile
+    keepRefToGeneratedCode=True)
+  File "C:\Python27\lib\site-packages\Cheetah\Template.py", line 775, in compile
+    compiler.compile()
+  File "C:\Python27\lib\site-packages\Cheetah\Compiler.py", line 1799, in compile
+    self._parser.parse()
+  File "C:\Python27\lib\site-packages\Cheetah\Parser.py", line 1554, in parse
+    self.assertEmptyOpenDirectivesStack()
+  File "C:\Python27\lib\site-packages\Cheetah\Parser.py", line 2778, in assertEmptyOpenDirectivesStack
+    raise ParseError(self, msg=errorMsg)
+ParseError: 
+
+Some #directives are missing their corresponding #end ___ tag: for
+Line 72, column 7
+
+Line|Cheetah Code
+----|-------------------------------------------------------------
+69  |
+70  |
+71  |</body>
+72  |</html>
+           ^
+
+[12/Nov/2019:16:58:17] HTTP 
+Request Headers:
+  REFERER: http://localhost:10020/user?id=1
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  CONNECTION: keep-alive
+  COOKIE: session_id=a3b5852c259bf540d6afcc4dbeefb81d8ce41afd
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  SEC-FETCH-SITE: same-origin
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[12/Nov/2019:16:58:17] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 95, in user
+    return unicode(rend)
+  File "C:\Python27\lib\site-packages\Cheetah\Template.py", line 1053, in __unicode__
+    return getattr(self, mainMethName)()
+  File "cheetah_DynamicallyCompiledCheetahTemplate_1573567097_19_62760.py", line 148, in respond
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 289, in valueFromSearchList
+    _raiseNotFoundException(key, searchList)
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 174, in _raiseNotFoundException
+    raise NotFound(excString)
+NotFound: cannot find 'courses'
+[12/Nov/2019:17:01:57] HTTP 
+Request Headers:
+  REFERER: http://localhost:10020/user?id=1
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  CONNECTION: keep-alive
+  COOKIE: session_id=a3b5852c259bf540d6afcc4dbeefb81d8ce41afd
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  SEC-FETCH-SITE: same-origin
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[12/Nov/2019:17:01:57] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 102, in user
+    return unicode(rend)
+  File "C:\Python27\lib\site-packages\Cheetah\Template.py", line 1053, in __unicode__
+    return getattr(self, mainMethName)()
+  File "DynamicallyCompiledCheetahTemplate.py", line 151, in respond
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 288, in valueFromSearchList
+    executeCallables=executeCallables)
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 229, in _valueForName
+    _raiseNotFoundException(key, obj)
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 174, in _raiseNotFoundException
+    raise NotFound(excString)
+NotFound: cannot find 'id'
+[12/Nov/2019:17:02:39] HTTP 
+Request Headers:
+  REFERER: http://localhost:10020/user?id=1
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  CONNECTION: keep-alive
+  COOKIE: session_id=a3b5852c259bf540d6afcc4dbeefb81d8ce41afd
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  SEC-FETCH-SITE: same-origin
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[12/Nov/2019:17:02:39] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 102, in user
+    return unicode(rend)
+  File "C:\Python27\lib\site-packages\Cheetah\Template.py", line 1053, in __unicode__
+    return getattr(self, mainMethName)()
+  File "DynamicallyCompiledCheetahTemplate.py", line 151, in respond
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 288, in valueFromSearchList
+    executeCallables=executeCallables)
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 229, in _valueForName
+    _raiseNotFoundException(key, obj)
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 174, in _raiseNotFoundException
+    raise NotFound(excString)
+NotFound: cannot find 'id'
+[19/Nov/2019:16:16:17] HTTP 
+Request Headers:
+  REFERER: http://localhost:10020/user?id=1
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  CONNECTION: keep-alive
+  COOKIE: session_id=8efa0e01d31389e6fa1ba6613ab53266e03acb0b
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  SEC-FETCH-SITE: same-origin
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[19/Nov/2019:16:16:17] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 66, in logout
+    return login_page("init")
+  File "main.py", line 20, in login_page
+    return template_render('login.html', {'message': message})
+  File "main.py", line 15, in template_render
+    for key, value in params:
+ValueError: too many values to unpack
+[19/Nov/2019:16:19:12]  Root. Template Render Failure!
+Traceback (most recent call last):
+  File "main.py", line 54, in index
+    return template_render('chess.html', None)
+  File "main.py", line 15, in template_render
+    for key, value in params.iteritems():
+AttributeError: 'NoneType' object has no attribute 'iteritems'
+[19/Nov/2019:16:19:12] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=313e0958f34c6beef604547821fae420a5b918c5
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[19/Nov/2019:16:19:12] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 57, in index
+    return error_page(str(e))
+NameError: global name 'error_page' is not defined
+[19/Nov/2019:16:43:36] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=9ec8bbc1695e6a1b64bf6125b4d29b0033bd1a80
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[19/Nov/2019:16:43:36] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 264, in __call__
+    ct.params['charset'] = self.find_acceptable_charset()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 173, in find_acceptable_charset
+    if encoder(self.default_encoding):
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 114, in encode_string
+    for chunk in self.body:
+TypeError: 'int' object is not iterable
+[19/Nov/2019:16:44:30] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=9ec8bbc1695e6a1b64bf6125b4d29b0033bd1a80
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[19/Nov/2019:16:44:30] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 115, in login_exists
+    return rows.count()
+TypeError: count() takes exactly one argument (0 given)
+[19/Nov/2019:16:44:41] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=9ec8bbc1695e6a1b64bf6125b4d29b0033bd1a80
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[19/Nov/2019:16:44:41] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 264, in __call__
+    ct.params['charset'] = self.find_acceptable_charset()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 173, in find_acceptable_charset
+    if encoder(self.default_encoding):
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 114, in encode_string
+    for chunk in self.body:
+TypeError: 'int' object is not iterable

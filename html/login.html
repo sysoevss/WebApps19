@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>Зачетная книжка. Авторизация</title> 
+<style> 
+form { 
+        text-align:center; 
+        font: 13px sans-serif; 
+} 
+#form_div { 
+        width: 25em; 
+        margin: 1em auto; 
+        text-align:left; 
+        padding: 0 2em 1.25em 2em; 
+        background-color: #d6e9f8; 
+        border: 2px solid #67a7e3; 
+} 
+</style> 
+</head> 
+<body> 
+<form action='/checklogin'> 
+  <div id='form_div'> 
+    <h3>Авторизация</h3> 
+    #if $message <> "init"  
+    <p style='padding: 0; margin: 0; color:#FF0000'> $message </p> 
+    #end if 
+    <table width="100%" border="0"> 
+      <tr> 
+        <td><label for='username' style="width: 3em">Логин :</label></td> 
+        <td><input name='username' type='text' id='username'/></td> 
+      </tr> 
+      <tr> 
+        <td><label for='passwd' style="width: 3em">Пароль:</label></td> 
+        <td><input name='passwd' type='password' id='passwd'/></td> 
+      </tr> 
+    </table> 
+    <p style='margin-left: 3em'> 
+      <input name='action' value='Войти' type='submit' id='submit-login' /> 
+  </div> 
+</form> 
+</body> 
+</html> 
