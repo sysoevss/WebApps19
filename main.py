@@ -23,7 +23,12 @@ def execute_query(query, params):
                                           database='markbook')
     cursor = cnx.cursor()
     cursor.execute(query, params)
-    return cursor.fetchall()
+    try:
+        rows = cursor.fetchall()
+    except:
+        rows = None
+        cnx.commit()
+    return rows
     
 def login_page(message):
     return template_render('login.html', {'message': message})
@@ -112,7 +117,20 @@ class Root(object):
     def login_exists(self, login):
         query = "Select id from markbook.users where login = %s"
         rows = execute_query(query, [login])
-        return str(len(rows))  
-            
+        return str(len(rows))
+        
+    @cherrypy.expose
+    def add_user(self, login, password, name, comment):
+        query = "Insert into markbook.users (name, comment, login, password) values (%s, %s, %s, %s)"
+        rows = execute_query(query, [name, comment, login, hashlib.md5(password).hexdigest().lower()])
+        return login_page("init")
+        
+    @cherrypy.expose
+    def course_registration(self):
+        query = "Select id, name, login from markbook.users"
+        rows = execute_query(query, [])
+        list = [{"id" : i[0], "name" : i[1], "login" : i[2]} for i in rows]
+        return template_render('course_edit.html',{"rows" : list})    
+        
         
 cherrypy.quickstart(Root(), '/', "app.conf")

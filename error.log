@@ -1938,3 +1938,76 @@ Traceback (most recent call last):
   File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 114, in encode_string
     for chunk in self.body:
 TypeError: 'int' object is not iterable
+[26/Nov/2019:16:32:41] HTTP 
+Request Headers:
+  REFERER: http://localhost:10020/registration
+  ORIGIN: http://localhost:10020
+  Remote-Addr: 127.0.0.1
+  Content-Length: 39
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+  CONNECTION: keep-alive
+  COOKIE: session_id=0693dce1d8ac8fa1fa24bcd23508a6b2a3535c68
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  SEC-FETCH-SITE: same-origin
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-USER: ?1
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate, br
+[26/Nov/2019:16:32:41] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 120, in add_user
+    rows = execute_query(query, [name, comment, login, password])
+  File "main.py", line 26, in execute_query
+    return cursor.fetchall()
+  File "C:\Python27\lib\site-packages\mysql\connector\cursor.py", line 893, in fetchall
+    raise errors.InterfaceError("No result set to fetch from.")
+InterfaceError: No result set to fetch from.
+[26/Nov/2019:16:58:18] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=0693dce1d8ac8fa1fa24bcd23508a6b2a3535c68
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  ACCEPT-ENCODING: gzip, deflate, br
+[26/Nov/2019:16:58:18] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "main.py", line 132, in course_registration
+    return template_render('course_edit.html',{"rows" : rows})
+  File "main.py", line 17, in template_render
+    return unicode(rend)
+  File "C:\Python27\lib\site-packages\Cheetah\Template.py", line 1053, in __unicode__
+    return getattr(self, mainMethName)()
+  File "DynamicallyCompiledCheetahTemplate.py", line 126, in respond
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 288, in valueFromSearchList
+    executeCallables=executeCallables)
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 229, in _valueForName
+    _raiseNotFoundException(key, obj)
+  File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 174, in _raiseNotFoundException
+    raise NotFound(excString)
+NotFound: cannot find 'id'

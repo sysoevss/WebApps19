@@ -10,14 +10,7 @@
 <script>
     jQuery(window).load(function() {
         jQuery("#submit_button").click(function() {
-            jQuery.get("login_exists", { login: jQuery("#login_input").val()}, function( data ) {
-                if (data != "0"){
-                    alert( "User exists!" );
-                }
-                else{
-                    jQuery("#registration_form").submit();
-                }
-            });
+            jQuery("#registration_form").submit();
         });
     });
 </script>
@@ -28,7 +21,7 @@
 <div class="container_12" >
     <span class="grid_1"><img src="/static/logo.jpg" width="80"/></span>
     <h1 class="grid_9">
-        &nbsp;  Регистрация
+        &nbsp;  Регистрация курса
     </h1>
     <hr class="grid_12"/>
 </div>
@@ -40,10 +33,12 @@
     </thead>
     <tbody>
         <form method="post" action="add_user" id="registration_form">
-            <tr><td ><input id ="login_input" class="grid_6" type="text" name="login" placeholder="Введите логин"/></tr></td>
-            <tr><td><input id = "password_input" class="grid_6"  type="password" name="password" placeholder="Введите пароль"/></tr></td>
-            <tr><td><input class="grid_6" type="text" name="name" placeholder="Введите ФИО"/></tr></td>
-            <tr><td><input class="grid_6" type="text" name="comment" placeholder="Введите контактные данные"/></tr></td>
+            <tr><td ><input id ="name_input" class="grid_6" type="text" name="name" placeholder="Введите название курса"/></tr></td>
+            <tr><td><select id = "instructor_select" class="grid_6"  name="instructor_select">
+                #for $row in $rows
+                    <option value = "$row.id">$row.login &nbsp; $row.name</option>
+                #end for
+            </select></tr></td>
             <tr><td class="grid_6" ><input type="button" id="submit_button"/></tr></td>
         </form>
     </tbody>
