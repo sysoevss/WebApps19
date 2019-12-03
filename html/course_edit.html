@@ -10,7 +10,18 @@
 <script>
     jQuery(window).load(function() {
         jQuery("#submit_button").click(function() {
-            jQuery("#registration_form").submit();
+            if (jQuery("#name_input").val() == "") {
+                jQuery("#name_input").css({'background-color' : '#ff9999'});
+                return;
+            }
+            jQuery.get("add_course", { name: jQuery("#name_input").val(), instructor: jQuery("#instructor_select").val()}, function( data ) {
+                if (data != "ok"){
+                    alert( "Операция не удалась! Повторите!" );
+                }
+                else{
+                    jQuery("#name_input").val("");
+                }
+            });
         });
     });
 </script>
@@ -32,14 +43,14 @@
     <thead>
     </thead>
     <tbody>
-        <form method="post" action="add_user" id="registration_form">
+        <form method="post" action="add_course" id="registration_form">
             <tr><td ><input id ="name_input" class="grid_6" type="text" name="name" placeholder="Введите название курса"/></tr></td>
             <tr><td><select id = "instructor_select" class="grid_6"  name="instructor_select">
-                #for $row in $rows
-                    <option value = "$row.id">$row.login &nbsp; $row.name</option>
+                #for $u in $users
+                    <option value = "$u.id">$u.login &nbsp; $u.name</option>
                 #end for
             </select></tr></td>
-            <tr><td class="grid_6" ><input type="button" id="submit_button"/></tr></td>
+            <tr><td class="grid_6" ><input type="button" id="submit_button" value="Добавить курс"/></tr></td>
         </form>
     </tbody>
     </table>

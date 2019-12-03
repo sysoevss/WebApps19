@@ -130,7 +130,12 @@ class Root(object):
         query = "Select id, name, login from markbook.users"
         rows = execute_query(query, [])
         list = [{"id" : i[0], "name" : i[1], "login" : i[2]} for i in rows]
-        return template_render('course_edit.html',{"rows" : list})    
+        return template_render('course_edit.html',{"users" : list})    
         
+    @cherrypy.expose
+    def add_course(self, name, instructor):
+        query = "Insert into markbook.courses (name, id_instructor) values (%s, %s)"
+        rows = execute_query(query, [name, instructor])
+        return "ok";
         
 cherrypy.quickstart(Root(), '/', "app.conf")
