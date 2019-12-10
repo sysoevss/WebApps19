@@ -2011,3 +2011,29 @@ Traceback (most recent call last):
   File "C:\Python27\lib\site-packages\Cheetah\NameMapper.py", line 174, in _raiseNotFoundException
     raise NotFound(excString)
 NotFound: cannot find 'id'
+[10/Dec/2019:16:16:56] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: session_id=c64e56310b13dd8940b024915e4486542a8d0fff
+  SEC-FETCH-MODE: navigate
+  HOST: localhost:10020
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+  USER-AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+  ACCEPT-LANGUAGE: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6
+  SEC-FETCH-SITE: none
+  SEC-FETCH-USER: ?1
+  ACCEPT-ENCODING: gzip, deflate, br
+[10/Dec/2019:16:16:56] HTTP 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 631, in respond
+    self._do_respond(path_info)
+  File "C:\Python27\lib\site-packages\cherrypy\_cprequest.py", line 690, in _do_respond
+    response.body = self.handler()
+  File "C:\Python27\lib\site-packages\cherrypy\lib\encoding.py", line 221, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\cherrypy\_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+TypeError: wrapTheFunction() takes no arguments (1 given)

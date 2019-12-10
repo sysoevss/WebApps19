@@ -21,7 +21,7 @@ form {
 <body> 
 <form action='/checklogin'> 
   <div id='form_div'> 
-    <h3>Авторизация</h3> 
+    <h3 style='text-align: center'>Авторизация</h3> 
     #if $message <> "init"  
     <p style='padding: 0; margin: 0; color:#FF0000'> $message </p> 
     #end if 
@@ -35,8 +35,9 @@ form {
         <td><input name='passwd' type='password' id='passwd'/></td> 
       </tr> 
     </table> 
-    <p style='margin-left: 3em'> 
+    <p style='text-align: center'> 
       <input name='action' value='Войти' type='submit' id='submit-login' /> 
+    <p style='text-align: center'><a href="/registration">Зарегистрироваться!</a>
   </div> 
 </form> 
 </body> 

@@ -7,6 +7,13 @@ from Cheetah.Template import Template
 import mysql.connector
 import hashlib
 
+def redirect_to_login_if_no_session(func):
+    def decorate(*args, **kwargs):
+        if 'sid' not in cherrypy.session:
+            return login_page("init")
+        return func(*args, **kwargs)
+    return decorate
+
 def template_render(fname, params):
     page = os.path.join('html', fname)
     f = codecs.open(page, encoding='utf-8')
@@ -31,6 +38,8 @@ def execute_query(query, params):
     return rows
     
 def login_page(message):
+    if 'sid' in cherrypy.session:
+        raise cherrypy.HTTPRedirect("/user?id=" + cherrypy.session['user_id'])
     return template_render('login.html', {'message': message})
 
 class Root(object):
@@ -54,15 +63,15 @@ class Root(object):
             return login_page("Отказано в доступе!!!"+e.message)
 
     @cherrypy.expose
+    @redirect_to_login_if_no_session
     def index(self):
-        if 'sid' not in cherrypy.session:
-            return login_page("init")
-        else:
-            try:
-                return template_render('chess.html', {})
-            except Exception, e:
-                cherrypy.log("Root. Template Render Failure!", traceback=True)
-                return error_page(str(e))
+        try:
+            raise cherrypy.HTTPRedirect("/user?id=" + cherrypy.session['user_id'])
+        except cherrypy.HTTPRedirect:
+            raise
+        except Exception, e:
+            cherrypy.log("Root. Template Render Failure!", traceback=True)
+            return error_page(str(e))
 
     @cherrypy.expose
     def logout(self):
@@ -70,19 +79,18 @@ class Root(object):
         return login_page("init")
 
     @cherrypy.expose
-    def user(self, id):
-        if 'sid' not in cherrypy.session:
-            return login_page("init")
-        
+    @redirect_to_login_if_no_session
+    def user(self, id):        
         if cherrypy.session['user_id'] != id:
             return login_page("init")
-        query = "SELECT name FROM markbook.users WHERE id = %s "
+        query = "SELECT name, is_admin FROM markbook.users WHERE id = %s "
         rows = execute_query(query, [id]) 
             
         if not rows:
             pass
             
         user_name = rows[0][0]
+        is_admin = rows[0][1]
         
         has_photo = os.path.isfile("./public/user_photos/" + id + ".jpg")
         photo = id + ".jpg"
@@ -91,10 +99,17 @@ class Root(object):
         rows = execute_query(query, [id])
         list = [{"id":i[0],"name":i[1]} for i in rows]
         
-        return template_render('user_page.html', {'user_name' : user_name, 'has_photo' : has_photo, 'photo' : photo, 'id' : id, 'courses': list})
+        return template_render('user_page.html', {'user_name' : user_name,
+                                                  'has_photo' : has_photo, 
+                                                  'photo' : photo, 
+                                                  'id' : id, 
+                                                  'courses': list, 
+                                                  'is_admin': is_admin})
 
     @cherrypy.expose
     def upload(self, id, ufile):
+        if 'sid' not in cherrypy.session:
+            return "ok"
         upload_path = "./public/user_photos/"
         upload_filename = str(id) + ".jpg"
         upload_file = os.path.join(upload_path, upload_filename)
@@ -111,10 +126,14 @@ class Root(object):
         
     @cherrypy.expose
     def registration(self):
+        if 'sid' in cherrypy.session:
+            raise cherrypy.HTTPRedirect("/user?id=" + cherrypy.session['user_id'])
         return template_render('user_edit.html',{})
         
     @cherrypy.expose
     def login_exists(self, login):
+        if 'sid' not in cherrypy.session:
+            return "ok"
         query = "Select id from markbook.users where login = %s"
         rows = execute_query(query, [login])
         return str(len(rows))
@@ -124,9 +143,16 @@ class Root(object):
         query = "Insert into markbook.users (name, comment, login, password) values (%s, %s, %s, %s)"
         rows = execute_query(query, [name, comment, login, hashlib.md5(password).hexdigest().lower()])
         return login_page("init")
-        
+    
     @cherrypy.expose
+    @redirect_to_login_if_no_session    
     def course_registration(self):
+        query = "Select is_admin from markbook.users where id = %s"
+        rows = execute_query(query, [cherrypy.session['user_id']])
+        if not rows:
+            raise cherrypy.HTTPRedirect("/user?id=" + cherrypy.session['user_id'])
+        if rows[0][0] == 0:
+            raise cherrypy.HTTPRedirect("/user?id=" + cherrypy.session['user_id'])
         query = "Select id, name, login from markbook.users"
         rows = execute_query(query, [])
         list = [{"id" : i[0], "name" : i[1], "login" : i[2]} for i in rows]

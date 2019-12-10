@@ -10,7 +10,7 @@
 
 <body>
 <div class="container_12" >
-    <span class="grid_1"><img src="/static/logo.jpg" width="80"/></span>
+    <span class="grid_1"><a href="/"><img src="/static/logo.jpg" width="80" /></a></span>
     <h1 class="grid_9">
         &nbsp;  $user_name
     </h1>
@@ -36,6 +36,17 @@
     #end if 
     </td></tr></tbody>
     </table>
+    
+    #if $is_admin
+    <table class="newspaper-a">
+    <thead>
+    </thead>
+    <tbody><tr><td>
+        <a href="/course_registration">Курсы</a>
+    </td></tr></tbody>
+    </table>
+    #end if 
+        
     </div>
 
     <div class="grid_4">
